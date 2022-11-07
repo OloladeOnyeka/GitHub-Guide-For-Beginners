@@ -12,7 +12,7 @@
 9. Conclusion
 
 ## Introduction
-We all work with multiple projects on a daily basis as content creators, developers, designers, product managers, and engineers that center on creating folders and files, making changes, communicating with others, exchanging ideas, and so on. Git is a version control tool that was built to allow users track different versions of their projects accross time. In this resource, we will introduce Git, GitHub and a few Git commands.
+We all work on multiple projects on a daily basis as Content Creators, Developers, Designers, Product Managers, Writers, and Engineers, that center on creating folders and files, making changes, communicating with others, exchanging ideas, and so on. Git is a version control tool that was built to allow users track different versions of their projects accross time. GitHub is a project collaboration tool used by both local and distributed teams all over the world.In this resource, you will be introduced to Git, GitHub and a few Git commands.
 
 ## What is GitHub?
 GitHub is a cloud-based hosting platform for interacting with Git Repositories. It is an excellent resource for developer collaboration, that helps keep track of, share and save Git projects remotely.
@@ -45,11 +45,12 @@ GitHub Desktop is Simple to use for beginners.  | GitHub CLI is Complex and has 
 
 We're about to get into the technical parts of this article, where you'll learn how to perform three fundamental Git tasks in GitHub and GitHub CLI, namely Commit, Clone, and Pull. However, before we get started, we want to make sure the following are available;
 
-1. A computer with an active internet connection
+1. A computer.
 2. [A GitHub Account](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home)
 3. [A GitHub CLI Installation](https://git-scm.com/downloads)
 4. [GitHub Desktop Installation](https://desktop.github.com/)
-5. Any External Editor 
+5. [Visual Studio Code](https://code.visualstudio.com/download).
+   You may use any text editor of your choice, but I'd recommend Visual Studio Code for this article.
 
 NB: All images and commands shown in this article are from a Windows Device.
 
@@ -64,37 +65,46 @@ Git Clone is used to create a copy of your repository onto your local device.
 ![Image 1](Image-Folder-2/annotely_image.png)
 ![Image 2](Image-Folder-2/annotely_image%20(url).png)
  
-4a. Sign in to GitHub Desktop version and click on 'Clone a Repository from the Internet'.
+4. [Create a folder](https://www.computerhope.com/issues/ch000742.htm) on your local device where the cloned repository will be saved.
+   
+5. Sign in to GitHub Desktop version.
+   ![Image 3](Image-Folder-2/annotely_image%20(27).png)
+   
+6. Click on 'Clone a Repository from the Internet' or click on File > Clone Repository.
 
 ![Image 3](Image-Folder-2/annotely_image%20(2).png)
 
-4b. An alternative is to Sign in to GitHub Desktop version and click on File > Clone Repository
 
 ![Image 4](Image-Folder-2/annotely_image%20(3).png)
 
-5. Click on URL > Paste the link of the repository you copied in the URL bar. 
+7. Click on URL > Paste the link of the repository you copied in the URL bar. 
    
    Choose the location path you would like the cloned repository to be saved on your local computer > click Clone.
    
 ![Image 5](Image-Folder-2/annotely_image%20(4).png)
 
-6. Your repository is now cloning and should take about a few seconds to some minutes depending on file size.
+8. Your repository is now cloning and should take about a few seconds to some minutes depending on file size.
    
 ![Image 6](Image-Folder-2/annotely_image%20(5).png)
 
 ## Git Clone with GitBash
-1. Follow steps 1 - 3 above
+Git Bash is an application that allows you to use the Git command line on your operating system. The commands in Git Bash allow the user to interact with the repository and git elements.
+
+1. Follow steps 1 - 4 above
 2. Open the GitBash Terminal
-3. Specify the location you want to save the cloned file by using the cd command and tap Enter.
-4. Type the CLI command - git clone - paste the repository URL you copied, and tap Enter.
+   
+![Image 6](Image-Folder-2/annotely_image%20(29).png)
+
+3. Specify the location you want to save the cloned file by using the `cd` command and tap Enter.
+4. Type the CLI command  `git clone`, paste the repository URL you copied, and tap Enter.
 
 ![Image](Image-Folder-2/annotely_image%20(6).png)
-
 5. Your repository is now cloned as shown in the image below
+
 
 ![Image](Image-Folder-2/annotely_image%20(7).png)
 
-6. To view the cloned repository on your local device, navigate to the folder you initially specified.
+6. To view the cloned repository on your local device and navigate to the folder you initially specified.
 
 
 ## Commit
@@ -110,7 +120,7 @@ Git Commit is used to permanently save changes made to a local repository.
 ![Image](Image-Folder-2/annotely_image%20(9).png)
 ![Image](Image-Folder-2/annotely_image%20(16).png)
 
-3. After adding your repository, click on Open In Visual Studio Code.
+3. After adding your repository, click'Open In Visual Studio Code'
    
 ![Image](Image-Folder-2/annotely_image%20(10).png)
 
@@ -122,7 +132,7 @@ Git Commit is used to permanently save changes made to a local repository.
 
 ![Image](Image-Folder-2/annotely_image%20(12).png)
 
-6. After making the required changes, select File > Save to save the changes.
+6. After making the required changes, select File > Save, in order to save the changes.
 
 ![Image](Image-Folder-2/annotely_image%20(13).png)
 
@@ -143,20 +153,21 @@ Git Commit is used to permanently save changes made to a local repository.
 
 ## Git Commit via GitHub CLI
 
-1. Open the Repository on your local computer and make the required changes using an external editor.
-2. Open GitBash on your local computer and navigate to the folder that contains the repository by typing cd and the name of the folder, then click Enter.
-3. To access the repository, type cd and the repository name. using the cd command and Enter, as shown in the image.
-4. To view the modified files in your repository, type git status and click Enter.
+1. Open the Repository on your local computer and make the required changes using Visua Studio Code.
+
+2. Open GitBash on your local computer and navigate to the folder that contains the repository by typing `cd` and the name of the folder, then click Enter.
+3. To access the repository, type `cd` + the repository name, and Enter, as shown in the image.
+4. To view the modified files in your repository, type `git status` and click Enter.
 
 
 ![Image](Image-Folder-2/annotely_image%20(17).png)
 
-5. Type 'git add' and the name of the modified file(s) then click Enter. This brings the file to staging.
-6. Type 'git status' to check the file(s) has been successfuly added. The added file should be in green and this tells you the file is ready to be commited to the repository.
+5. Type `git add` + the name of the modified file(s) then click Enter. This brings the file to staging.
+6. Type `git status` to check that the file(s) has been successfuly added. The added file should be in green and this tells you the file is ready to be commited to the repository.
 
 ![Image](Image-Folder-2/annotely_image%20(18).png)
 
-7. To commit the file(s), type git commit -m"commit message" -m"commit message description"
+7. To commit the file(s), type `git commit -m"commit message" -m"commit message description`
 
 ![Image](Image-Folder-2/annotely_image%20(19).png)
 
@@ -173,7 +184,7 @@ A pull action is used to extract updated content from a remote repository to the
    
 ![Image](Image-Folder-2/annotely_image%20(24).png)
 
-4a. This activates the Pull request.
+4a. This activates the Pull action.
 
 4b. To view the pulled repository, click open in Visual Studio Code
 
@@ -184,13 +195,13 @@ A pull action is used to extract updated content from a remote repository to the
 1. Open Git Bash
 2. Open the Folder where the Repository you would like to update is located.
 3. Copy the URL of the remote repository you intend to pull.
-4. Type git pull and the url link of the remote repository.
+4. Type `git pull` + the url link of the remote repository.
 5. Click Enter.
 
 ![Image](Image-Folder-2/annotely_image%20(20).png)
 
 ## Conclusion
-Git is a versatile and useful tool, but it demands consistent practice and involvement to get the most out of it. The more you use Git, the better you get at it, just like any other tool.
+Git, GitHub, and GitBash Terminal are all diverse and valuable tools, but getting the most out of them requires constant practice and commitment. Like any other tool, the more you use them, the better you get at them.
 
 
 
