@@ -1,2 +1,1 @@
-# Technical-Writing-Assignment 1
-Beginners Guide
+# GitHub - A Guide For Beginners
