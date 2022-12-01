@@ -1,1 +1,1 @@
-# GitHub - A Guide For Beginners
+# A Beginner's Guide To GitHub
